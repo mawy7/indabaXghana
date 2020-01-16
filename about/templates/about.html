@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "About | Ghana Data Science Summit" %}{% endif %}{% endblock %}
+
+
+{% block content %}
+
+
+    <!--Banner Inner-->
+    <section>
+        <div class="lgx-banner lgx-banner-inner">
+            <div class="lgx-page-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading-area">
+                                <div class="lgx-heading lgx-heading-white">
+                                    <h2 class="heading">About Us</h2>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                                    <li class="active">About</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--//.ROW-->
+                </div><!-- //.CONTAINER -->
+            </div><!-- //.INNER -->
+        </div>
+    </section> <!--//.Banner Inner-->
+
+
+    <main>
+        <div class="lgx-page-wrapper lgx-page-wrapper-none">
+ 
+            <!--ABOUT-->
+            <section>
+                <div id="lgx-about" class="lgx-about">
+                    <div class="lgx-inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-5">
+                                    <div class="lgx-about-img">
+                                        <img src="{% static 'assets/img/footer-logo1.png' %}" alt="about">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-7">
+                                    <div class="lgx-about-content-area">
+                                        <div class="lgx-heading">
+                                            <h2 class="heading">Brief Overview </h2>
+                                        </div>
+                                        <div class="lgx-about-content">
+                                            <p class="text">
+                                                The 2nd Ghana Data Summit 2020 (dubbed IndabaX Ghana) is organized by the Data Science Network (a non-profit organization) and Wave-2 Analytics Ltd., a Ghanaian-based analytics startup in partnership with Deep Learning Indaba.
+                                                <br><br>
+                                                Ghana is undergoing a “Data Science” transformation with hundreds of activities happening nationwide. Those who are new to data science are asking, “how do I get started?” Businesses and governments are asking “how do I deploy Machine Learning and Artificial Intelligence to create value?” Also, schools are grappling with how to incorporate Data Science into their curriculum. The IndabaX Ghana 2020 aims to create an inclusive platform where everyone – students, professors, researchers, businesses, start-ups, and leaders – can connect and enhance capacity in data science and analytics (including data mining, machine learning, and artificial intelligence).
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <h2 class="heading">Objectives of the Ghana Data Science Summit 2020  (IndabaX Ghana)</h2>
+                            <br>
+                            <div class="lgx-about-content">
+                                <p class="text">
+                                  The Ghana Data Science Summit 2020 aims to accomplish the following:
+                                    <br>
+                                    <ul>
+                                        <li>Create awareness of data science and the value it brings to students, researchers, businesses and governments</li>
+                                        <li>Build capacity of data science professionals and equip them with  relevant practical and technical knowledge needed to take full advantage of analytics and machine learning</li>
+                                        <li>Create a platform where businesses, data science service providers, data science professionals as well as data technology infrastructure  providers come together, network and collaborate to solve the most valuable and interesting data science problems for their respective benefits</li>
+                                        <li>Collaborate with local universities and other academic stakeholders to discuss ways of incorporating modern data science concepts in their curriculum</li>
+
+                                    </ul>
+                                </p>
+                            </div>
+                        </div><!-- //.CONTAINER -->
+                    </div><!-- //.INNER -->
+                </div>
+            </section>
+            <!--ABOUT END-->
+
+            <!--SPEAKERS-->
+            <section>
+                <div id="lgx-speakers" class="lgx-speakers">
+                    <div class="lgx-inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="lgx-heading">
+                                        <h2 class="heading">Meet the team</h2>
+                                        <h3 class="subheading">We are a group of people with the aim of spreading the knowledge of Data Science and Machine Learning across Ghana, and Africa as a whole.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//.ROW-->
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                    <div class="lgx-single-speaker">
+                                        <figure>
+                                            <a class="profile-img" href=""><img src="{% static 'assets/img/team/delali.jpeg' %}" alt="Speaker"/></a>
+                                            <figcaption>
+                                                <div class="social-group">
+                                                    <a class="sp-tw" href="https://twitter.com/DelaliAgbey"><i class="fa fa-twitter"></i></a>
+                                                    <a class="sp-in" href="https://www.linkedin.com/in/delaliagbenyegah/"><i class="fa fa-linkedin"></i></a>
+                                                </div>
+                                                <div class="speaker-info">
+                                                    <h3 class="title"><a href="">Delali Agbenyegah</a></h3>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                    <div class="lgx-single-speaker">
+                                        <figure>
+                                            <a class="profile-img" href=""><img src="{% static 'assets/img/team/austin.jpeg' %}" alt="Speaker"/></a>
+                                            <figcaption>
+                                                <div class="social-group">
+                                                    <a class="sp-tw" href="https://twitter.com/austin_denteh"><i class="fa fa-twitter"></i></a>
+                                                    <a class="sp-in" href="https://www.linkedin.com/in/augustinedenteh/"><i class="fa fa-linkedin"></i></a>
+                                                </div>
+                                                <div class="speaker-info">
+                                                    <h3 class="title"><a href="">Augustine Denteh, PhD</a></h3>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                    <div class="lgx-single-speaker">
+                                        <figure>
+                                            <a class="profile-img" href=""><img src="{% static 'assets/img/team/aseda.jpg' %}" alt="Speaker"/></a>
+                                            <figcaption>
+                                                <div class="social-group">
+                                                    <a class="sp-tw" href="https://twitter.com/AsedaAD"><i class="fa fa-twitter"></i></a>
+                                                    <a class="sp-in" href="https://linkedin.com/in/aseda-addai-deseh/"><i class="fa fa-linkedin"></i></a>
+                                                </div>
+                                                <div class="speaker-info">
+                                                    <h3 class="title"><a href="">Aseda Addai-Deseh</a></h3>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                    <div class="lgx-single-speaker">
+                                        <figure>
+                                            <a class="profile-img" href=""><img src="{% static 'assets/img/team/elvis.jpg' %}" alt="Speaker"/></a>
+                                            <figcaption>
+                                                <div class="social-group">
+                                                    <a class="sp-tw" href="#"><i class="fa fa-twitter"></i></a>
+                                                    <a class="sp-in" href="https://www.linkedin.com/in/elvis-agbenyega/"><i class="fa fa-linkedin"></i></a>
+                                                </div>
+                                                <div class="speaker-info">
+                                                    <h3 class="title"><a href="">Elvis Agbeshi Agbenyega</a></h3>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                            
+
+                            </div>
+                            <!--//.ROW-->
+                        </div>
+                        <!-- //.CONTAINER -->
+                    </div>
+                    <!-- //.INNER -->
+                </div>
+            </section>
+            <!--SPEAKERS END-->
+
+        </div>
+    </main>
+
+    {% include 'footerO.html' %}
+
+{% endblock %}

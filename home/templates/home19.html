@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>IndabaX Ghana</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="{% static 'assets19/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.8/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'assets19/css/main.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <style>
+    html,
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#site-nav">
+  <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+        </button>
+
+      </div>
+      <!-- /.navbar-header -->
+
+      <div class="collapse navbar-collapse" id="navbar-items">
+        <ul class="nav navbar-nav">
+
+          <!-- navigation menu -->
+          <li class="active">
+            <a data-scroll href="index19.html">Home</a>
+          </li>
+          <li>
+            <a data-scroll href="#about">About</a>
+          </li>
+          <li>
+            <a href="./speakers19.html">Speakers</a>
+          </li>
+          <li>
+            <a data-scroll href="#ts-schedule">Schedule</a>
+          </li>
+          <li>
+            <a data-scroll href="#sponsors">Sponsors</a>
+          </li>
+          <li>
+            <a data-scroll href="#location">Location</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <header id="site-header" class="site-header valign-center">
+    <div class="intro" style="background: black; opacity: 0.8">
+
+      <!-- <img src="{% static 'assets19/images/logo1.png' %}" alt="Logo"> -->
+
+      <h1 style="letter-spacing: .2em; font-size: 300%">Ghana Data Science Summit 2019</h1>
+      <h1 style="letter-spacing: .1em">IndabaX Ghana</h1>
+
+      <h4 style="text-transform: capitalize; letter-spacing: .06em;">Theme: The Promise of Data Science for Economic
+        Transformation</h4>
+
+      <!-- <div class="row" style="margin-top: 5%;">
+        <center>
+          <a class="btn btn-white" href="#" target="_blank" style="background: red; color: white;">Sorry, General
+            Applications Closed</a>
+        </center>
+        <center>
+          <a class="btn btn-white" id="apply" href="https://forms.gle/a8vJWUBBqyE7cepd9" target="_blank">Apply For
+            Executive Session</a>
+        </center>
+      </div> -->
+    </div>
+  </header>
+
+  <section id="facts" class="bg-image-1 facts text-center">
+    <div style="padding: 50px 0px; height: 100%; background: black; opacity: 0.8">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+
+            <i class="ion-ios-calendar">
+            </i>
+            <h3>25-27 April<br>2019</h3>
+
+          </div>
+          <div class="col-sm-3">
+
+            <i class="ion-ios-pin">
+            </i>
+            <h3>Kofi Annan Center of Excellence in ICT<br>Accra, Ghana</h3>
+
+          </div>
+          <div class="col-sm-3">
+
+            <i class="ion-ios-pricetags">
+            </i>
+            <h3>8<br>Hands-on Training Sessions</h3>
+
+          </div>
+          <div class="col-sm-3">
+
+            <i class="ion-ios-megaphone">
+            </i>
+            <h3>12<br>Lectures</h3>
+
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+    </div>
+    <!-- container -->
+  </section>
+  <!-- comment  
+
+-->
+
+  <section id="ts-schedule" class="ts-schedule section schedule" style="background: #f8f8f8;">
+    <div class="container">
+      <div class="row text-center">
+        <div class="row">
+          <div class="col-md-3 col-xs-12">
+            <h2 class="section-title">Event Schedule</h2>
+          </div>
+        </div>
+        <!--<p class="section-sub-title">Full three-day event with awesome speakers!</p>-->
+
+        <div>
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">Day
+                1</a></li>
+            <li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">Day 2</a></li>
+            <li role="presentation"><a href="#day3" aria-controls="day3" role="tab" data-toggle="tab">Day 3 -
+                Tutorials</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <!-- Day 1-->
+            <div role="tabpanel" class="tab-pane fade in active" id="day1">
+              <div class="row" style="text-align: left; padding: 2% 5%;">
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    Slot Time
+                  </div>
+                  <div class="col-md-8 ">
+                    Agenda
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    07:00 - 09:00
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4>Registration and Breakfast</h4>
+                    <p>
+                      Pick up your name tags and breakfast
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    09:00 - 09:15am
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4>Welcome Address</h4>
+                    <p>
+                      <b>By: Delali Agbenyegah</b>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    09:15 - 09:45
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4>Keynote</h4>
+                    <p>
+                      The promise of Data Science for Economic Transformation <br>
+                      <b>By: Winifred Kotin</b>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    10:00 - 11:00
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4></h4>
+                    <p>
+                      Data Management: The Foundation of all Analytics <br>
+                      <b>By: John Aidoo</b>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    11:15 - 12:15
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4></h4>
+                    <p>
+                      Business Analytics: A Complete Overview of Data Driven Decision Making in a Quickly Changing
+                      Business Environment <br>
+                      <b>By: Isaac Aidoo</b>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    12:15 - 13:15
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4>Lunch Break</h4>
+                    <p></p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    13:15 - 14:15
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4></h4>
+                    <p>
+                      Predictive Analytics in Healthcare<br>
+                      <b>By: Danielle Belgrave, PhD</b>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    14:30 - 15:30
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4></h4>
+                    <p>
+                      A Practical Exposition of Data Science in the Retail Marketing and Financial Services <br>
+                      <b>By: Delali Agbenyegah</b>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    15:45 - 16:45
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4>Panel Discussion</h4>
+                    <p>
+                      Overcoming Barriers to Analytics and its Application in Ghana<br>
+                      <b>Facilitator: Akua Oseiwah Ahenkorah</b><br>
+                      <b>Panelists: Dr. Ezekiel Nortey, Dr. Anani Lotsi</b>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    17:00 - 19:00
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4>Poster Presentations & Networking Reception</h4>
+                    <p></p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- End of Day 1-->
+
+            <!-- Day 2-->
+            <div role="tabpanel" class="tab-pane fade" id="day2">
+              <div class="row" style="text-align: left; padding: 2% 5%;">
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    Slot Time
+                  </div>
+                  <div class="col-md-8 ">
+                    Agenda
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    07:00 - 09:00
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4>Registration and Breakfast</h4>
+                    <p>
+                      Pick up your name tags and breakfast
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    09:00 - 09:45
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4>Keynote</h4>
+                    <p>
+                      Machine learning and Artificial Intelligence&mdash;Current state of research and applications in
+                      Africa and beyond <br>
+                      <b>By: Moustapha Cisse, PhD</b>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    10:00 - 11:00
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4></h4>
+                    <p>
+                      Introduction to Statistical Machine Learning and applications <br>
+                      <b>By: Shakir Mohamed, PhD</b>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    11:15 - 12:15
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4></h4>
+                    <p>
+                      Deep Learning Fundamentals -- Architectures and Applications <br>
+                      <b>By: Kwadwo Agyapon-Ntra</b>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    12:15 - 13:15
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4>Lunch Break</h4>
+                    <p></p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    13:15 - 14:15
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4></h4>
+                    <p>Introduction to Robotics and its applications <br>
+                      <b>By: Dr. Ayorkor Korsah</b></p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    14:30 - 15:30
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4></h4>
+                    <p>Machine Learning Applications in Health Care and Agro Systems <br>
+                      <b>By: Darlington Akogo</b></p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    15:45 - 16:45
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4></h4>
+                    <p>
+                      Machine Learning in Real Life <br>
+                      <b>By: Richard Ackon</b></p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    17:00 - 18:00
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4>Panel Discussion</h4>
+                    <p>Diversity, Inclusion, Building Careers and Creating opportunities in Machine Learning <br>
+                      <b>Facilitator: Jeph Acheampong</b><br>
+                      <b>Panelists: June Seif, Darlington Akogo, Samuel Mensah</b>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row schedule-row">
+                    <div class="col-md-4 schedule-time-slot">
+                      18:00 - 18:15
+                    </div>
+                    <div class="col-md-8 ">
+                      <h4>Closing Remarks</h4>
+                      <b>By: Delali Agbenyegah</b>
+                      <p></p>
+                    </div>
+                  </div>
+
+                <div class="row schedule-row">
+                  <div class="col-md-4 schedule-time-slot">
+                    18:30 - 20:30
+                  </div>
+                  <div class="col-md-8 ">
+                    <h4>After-Party & Networking</h4>
+                    <p></p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- End of Day 2-->
+
+            <!-- Day 3-->
+            <div role="tabpanel" class="tab-pane fade" id="day3">
+                <div class="row" style="text-align: left; padding: 2% 5%;">
+                    <div class="row schedule-row">
+                        <div class="col-md-4 schedule-time-slot">
+                          8:00am - 9:00am
+                        </div>
+                        <div class="col-md-8 ">
+                          <h4>Registration</h4>
+                          <p></p>
+                        </div>
+                      </div>
+
+                      <div class="row schedule-row">
+                          <div class="col-md-4 schedule-time-slot">
+                            9:00am - 10:30am
+                          </div>
+                          <div class="col-md-8 ">
+                            <h4>Tutorial Set 1</h4>
+                            <p>
+                              Option 1: Descriptive Analytics and Data Visualization <br>
+                              <b>Facilitator: Dr. Richard Minkah</b>
+                              <br><br>
+                              Option 2: Mathematics of Machine Learning <br>
+                              <b>Facilitator: Gilbert Adjei</b>
+                             
+                            </p>
+                          </div>
+                      </div>
+
+                      <div class="row schedule-row">
+                          <div class="col-md-4 schedule-time-slot">
+                            10:45am - 12:15pm
+                          </div>
+                          <div class="col-md-8 ">
+                            <h4>Tutorial Set 2</h4>
+                            <p>
+                              Option 1: R Programming for Data Science and Machine Learning<br>
+                              <b>Facilitator: John Aidoo</b>
+                              <br><br>
+                              Option 2: Python Programming for Data Science and Machine Learning<br>
+                              <b>Facilitator: Vincent Appiah</b>
+                             
+                            </p>
+                          </div>
+                      </div>
+                      
+                      
+                      <div class="row schedule-row">
+                          <div class="col-md-4 schedule-time-slot">
+                            12:15 - 13:15
+                          </div>
+                          <div class="col-md-8 ">
+                            <h4>Lunch Break</h4>
+                            <p></p>
+                          </div>
+                      </div>
+
+
+                      <div class="row schedule-row">
+                          <div class="col-md-4 schedule-time-slot">
+                            13:15pm - 14:45pm
+                          </div>
+                          <div class="col-md-8 ">
+                            <h4>Tutorial Set 3</h4>
+                            <p>
+                              Option 1: Machine Learning Basics<br>
+                              <b>Facilitator: Oreoluwa Ogundipe</b>
+                              <br><br>
+                              Option 2: Introduction to Deep Learning and TensorFlow<br>
+                              <b>Facilitator: Kwadwo Agyapon-Ntra</b>
+                             
+                            </p>
+                          </div>
+                      </div>
+
+                      <div class="row schedule-row">
+                          <div class="col-md-4 schedule-time-slot">
+                            13:00pm - 16:30pm
+                          </div>
+                          <div class="col-md-8 ">
+                            <h4>Tutorial Set 4</h4>
+                            <p>
+                              Option 1: Machine Learning Applications in Predictive Analytics<br>
+                              <b>Facilitator: Delali Agbenyegah</b>
+                              <br><br>
+                              Option 2: Introduction to Machine Learning Applications in Computer Vision<br>
+                              <b>Facilitator: Darlington Akogo</b>
+                             
+                            </p>
+                          </div>
+                      </div>
+                </div>
+            </div>
+            <!-- End of Day 3-->
+          </div>
+
+        </div>
+
+      </div>
+      <!--/ Title row end -->
+    </div>
+    <!--/ Container end -->
+  </section>
+
+
+
+  <section id="sponsors" class="section sponsors">
+    <div class="container">
+      <div class="row" style="margin-bottom: 100px;">
+        <div class="col-md-12">
+          <h2 class="section-title">Sponsors</h2>
+        </div>
+      </div>
+      <div class="logos">
+        <div class="row">
+          <div class="col-sm-4">
+            <center>
+              <a href="https://www.deeplearningindaba.com" target="_blank" class="sponsors-box">
+                <img src="{% static 'assets19/images/sponsors/indaba.png' %}" class="sponsor-logo" style="max-width: 400px;">
+              </a>
+            </center>
+          </div>
+
+          <div class="col-sm-4">
+            <center>
+              <a href="https://ai.google" target="_blank" class="sponsors-box">
+                <img src="{% static 'assets19/images/sponsors/googleai.png' %}" class="sponsor-logo" style="max-width: 400px;">
+              </a>
+            </center>
+          </div>
+
+          <div class="col-sm-4">
+            <center>
+              <a href="https://www.wave2analytics.com" target="_blank" class="sponsors-box">
+                <img src="{% static 'assets19/images/sponsors/wave2.png' %}" class="sponsor-logo" style="max-width: 400px;">
+              </a>
+            </center>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <center>
+              <a href="https://www.microsoft.com/" target="_blank" class="sponsors-box">
+                <img src="{% static 'assets19/images/sponsors/microsoft.png' %}" class="sponsor-logo"
+                  style="height: 100px; max-width: 400px;">
+              </a>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="partners" class="section sponsors">
+    <div class="container">
+      <div class="row" style="margin-bottom: 100px;">
+        <div class="col-md-12">
+          <h2 class="section-title">Partners</h2>
+        </div>
+      </div>
+      <div class="logos">
+        <div class="row" style="margin-top: 10px;">
+          <div class="col-sm-4">
+            <center>
+              <a href="https://www.pythonghana.org/" target="_blank" class="sponsors-box">
+                <img src="{% static 'assets19/images/sponsors/PythonGh1.png' %}" class="sponsor-logo"
+                  style="height: 150px; max-width: 400px;">
+              </a>
+            </center>
+          </div>
+
+          <div class="col-sm-4">
+            <center>
+              <a href="https://www.ug.edu.gh/statistics/" target="_blank" class="sponsors-box">
+                <img src="{% static 'assets19/images/sponsors/legon.png' %}" class="sponsor-logo" style="max-width: 400px;">
+              </a>
+            </center>
+          </div>
+
+          <div class="col-sm-4">
+            <center>
+              <a href="http://www.bacegroup.com/" target="_blank" class="sponsors-box">
+                <img src="{% static 'assets19/images/sponsors/bacelogo.jpeg' %}" class="sponsor-logo" style="width: 210px;">
+              </a>
+            </center>
+          </div>
+
+          <div class="col-sm-4">
+            <center>
+              <a href="http://www.minohealth.com" target="_blank" class="sponsors-box">
+                <img src="{% static 'assets19/images/sponsors/minohealth.png' %}" class="sponsor-logo" style="width: 210px;">
+              </a>
+            </center>
+          </div>
+
+          <div class="col-sm-4">
+            <center>
+              <a href="http://www.runmilainstitute.com" target="_blank" class="sponsors-box">
+                <img src="{% static 'assets19/images/sponsors/runmila.png' %}" class="sponsor-logo" style="width: 210px;">
+              </a>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="location" class="section location" style="background: #f8f8f8">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h2 class="section-title">Venue</h2>
+          <address>
+            <p>
+              Kofi Annan Center of Excellence in ICT<br>
+              Accra, Ghana<br>
+            </p>
+          </address>
+        </div>
+
+
+        <div class="col-sm-9">
+          <iframe style="width:100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.049743242701!2d-0.19420488523406285!3d5.559645995969028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf90822f5c0619%3A0x2b4f5e33339e5bf8!2sAITI-KACE+(Advance+Information+Technology+Institute-+Kofi+Annan+Centre+of+Excellence)!5e0!3m2!1sen!2sgh!4v1548885245764"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="row">
+        <h2 class="section-title multiple-title">About</h2>
+        <div class="col-md-12">
+          <p style="text-align:center;">
+            The maiden Ghana Data Science Summit 2019,
+            dubbed IndabaX Ghana, is organized in partnership with the Deep Learning Indaba.
+            IndabaX Ghana 2019 will take place at the Kofi Annan Center of Excellence in ICT from Thursday,
+            April 25, 2019, through Saturday, April 27, 2019.  <br><br>
+            The aim of the Ghana Data Science Summit 2019 is to bring
+            increased awareness and capacity building efforts in data
+            science and analytics (including data mining, machine
+            learning, and artificial intelligence) to Ghana. Although
+            Ghana is often touted as the gateway to Africa, Google’s
+            announcement of its first African AI Research Center in
+            Accra in Summer 2018 sparked several news headlines about
+            why Ghana was Google’s chosen destination. Truth be told, Ghana’s
+            contribution to the data science revolution is long overdue!
+            The Ghana Data Science Summit 2019 will assemble some of
+            the brightest experts driving change at the forefront of
+            data science and machine intelligence from all over the
+            world.  <br><br>
+            The Ghana Data Science Summit 2019 will treat its attendees to a
+            series of lectures, panel discussions, and training
+            sessions (tutorials) on Data Management and Business
+            Analytics (Day 1), Machine Learning and Artificial Intelligence
+            (Day 2), and hands-on tutorials (Day 3). The best practices
+            regarding data collection and management as well as machine
+            intelligence will be discussed by accomplished experts with
+            illustrations with the right technology to ensure
+            successful analytical product delivery. <br><br>
+            The Ghana Data Science Summit 2019 is open to all students, researchers, industry practitioners and
+            leaders, and anyone interested in learning and applying data science in their professional lives.
+            Prospective participants must apply and get accepted into the Ghana Data Science Summit 2019 by
+            March 15, 2019. The Ghana Data Science Summit 2019 comes at no cost to participants by courtesy
+            of our partners and sponsors.
+          </p>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+  </section>
+
+  <!-- Apply Now!!-->
+  <!-- <div class="row" style="background: #292339">
+      <div class="row" style="margin-top: 5%; margin-bottom: 5%;">
+          <center>
+            <a class="btn btn-white" id="apply" href="http://bit.ly/GASindabaX" target="_blank">Apply NOW!</a>
+          </center>
+        </div>
+  </div>
+ -->
+
+  <section id="about-team" class="section about">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="section-title multiple-title">The Team</h2>
+          <p style="text-align:center;">
+            We are a group of people with the aim of spreading the knowledge of Data Science and Machine Learning across
+            Ghana,
+            and Africa as a whole.
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="organizers">
+
+        </div> -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="speaker">
+            <figure>
+              <a href="https://www.linkedin.com/in/abigail-mesrenyame-dogbe-83a1a5161/" target="_blank">
+                <img src="{% static 'assets19/images/organisers/abigail.jpeg' %}" alt="organizer">
+              </a>
+              <div class="col-xs-12">
+                <h4>Abigail Mesrenyame Dogbe</h4>
+              </div>
+            </figure>
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="speaker">
+            <figure>
+              <a href="https://www.linkedin.com/in/aseda-addai-deseh/" target="_blank">
+                <img src="{% static 'assets19/images/organisers/aseda.jpg" alt="organizer">
+              </a>
+              <div class="col-xs-12">
+                <h4>Aseda Addai-Deseh</h4>
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="speaker">
+            <figure>
+              <a href="https://www.linkedin.com/in/augustinedenteh/" target="_blank">
+                <img src="{% static 'assets19/images/organisers/austin.jpeg' %}" alt="organizer">
+              </a>
+              <div class="col-xs-12">
+                <h4>Augustine Denteh, PhD</h4>
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="speaker">
+            <figure>
+              <a href="https://www.linkedin.com/in/delaliagbenyegah/" target="_blank">
+                <img src="{% static 'assets19/images/organisers/delali.jpeg' %}" alt="organizer">
+              </a>
+              <div class="col-xs-12">
+                <h4>Delali Agbenyegah</h4>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="speaker">
+            <figure>
+              <a href="https://www.linkedin.com/in/elvis-agbenyega/" target="_blank">
+                <img src="{% static 'assets19/images/organisers/elvis.jpeg' %}" alt="organizer">
+              </a>
+              <div class="col-xs-12">
+                <h4>Elvis Agbeshi Agbenyega</h4>
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="speaker">
+            <figure>
+              <a href="https://www.linkedin.com/in/miriam-darteh-a3486a11b/s" target="_blank">
+                <img src="{% static 'assets19/images/organisers/miriam.jpeg' %}" alt="organizer">
+              </a>
+              <div class="col-xs-12">
+                <h4>Miriam Darteh</h4>
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="speaker">
+            <figure>
+              <a href="https://www.linkedin.com/in/richard-ackon-473aba119/" target="_blank">
+                <img src="{% static 'assets19/images/organisers/richard.jpg" alt="organizer">
+              </a>
+              <div class="col-xs-12">
+                <h4>Richard Ackon</h4>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <!-- FAQs -->
+  <div class="row" style="padding-bottom: 3%; padding-top: 1%; background: #f8f8f8;">
+    <div class="container">
+      <div class="col-md-1"></div>
+      <div class="col-md-9">
+        <h2 style="text-align: center;">Frequently Asked Questions</h2>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <a>Who are the organizers of the conference?</a>
+            <div class="content">
+              <p>The Ghana Data Science Summit Group (GAS Group) is a team of data science and machine learning
+                researchers and professionals committed to building capacity and promoting research and
+                application of analytics (broadly defined) in Ghana. <br><br>
+                Our team is multifaceted and possesses wide-ranging skills and experiences in academia and industry
+                in the areas of data management, business analytics, predictive modeling, artificial intelligence, and
+                machine learning. Members of our team include professors, researchers (including students),
+                statisticians, and data scientists and engineers (including machine learning engineers), working in
+                several areas such as retail, finance, risk management, economics, health care, agriculture and many
+                more.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a>Why is the Ghana Data Science Summit dubbed IndabaX Ghana?</a>
+            <div class="content">
+              <p>
+                This is because we have a partnership with Deep Learning Indaba for the
+                maiden edition of the Ghana Data Science Summit 2019 to have a special
+                focus on machine learning. You can learn more about Deep Learning Indaba <a
+                  href="https://twitter.com/DeepIndaba" target="_blank">here.</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <a>What is the application deadline?</a>
+            <div class="content">
+              <p>
+                The application deadline is March 8, 2019 at 11:59 pm (GMT). Late applications will not be considered.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <a>When will I get notified of the outcome of my application?</a>
+            <div class="content">
+              <p>All successful applications will be notified via email by March 15, 2019</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <a>What qualifications are you looking for to be accepted into the Ghana Data Science Summit 2019?</a>
+            <div class="content">
+              <p>Each application will be reviewed on its merit with due consideration given to interest in data
+                science, prior experience, and academic background. </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <a>Is there any type of travel or lodging funding provided for participants?</a>
+            <div class="content">
+              <p>Sorry, we currently do not have the funds to support travel or lodging.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <a>I am not an expert at data science or machine learning. Should I apply?</a>
+            <div class="content">
+              <p>Yes! We welcome all applications from everyone regardless of prior expertise in data science. Each
+                application is unique, so we examine all aspects of each application carefully.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <a>Am I guaranteed to attend the Ghana Data Science Summit 2019 if I apply?</a>
+            <div class="content">
+              <p>While we encourage everyone interested in data science to apply, we are unable
+                to guarantee a place for each applicant. We will notify all
+                applicants regarding the outcome of their application.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <a>My question is not listed. How do I contact you?</a>
+            <div class="content">
+              <p>Please contact us at <a href="mailto:info@indabaxghana.com">info@indabaxghana.com</a> We look forward
+                to hearing from you.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9" style="text-align:left;">
+          <div class="row">
+            <h4 class="">Want to Contact Us?</h4>
+            <div class="col-md-6">
+              <p>
+                Please send us an email at: <br>
+                <a href="mailto:info@indabaxghana.com" style="color: white">
+                  info@indabaxghana.com
+                </a>
+              </p>
+
+            </div>
+            <div class="col-md-6">
+              Contact numbers:
+              <p>
+                <a href="tel:+233 504037331" style="color: white"> +233 504037331 </a> <br>
+                <a href="tel:+233 504037331" style="color: white"> +233 572226620 </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <center>
+            <p style="font-size: 17px;">Let's Get Social:</p>
+
+            <div style="margin-top: 20px;">
+              <a href="https://www.facebook.com/Ghana-Analytics-Summit-220778151832185/" target="_blank"><img
+                  src="{% static 'assets19/images/fb.png' %}" class="social"></a>
+              <a href="https://www.instagram.com/ghanadatascience/" target="_blank"><img src="{% static 'assets19/images/insta.png' %}"
+                  class="social"></a>
+              <a href="https://twitter.com/ghdatascience" target="_blank"><img src="{% static 'assets19/images/twitter.png' %}"
+                  class="social"></a>
+              <a href="https://www.linkedin.com/company/ghana-data-science-summit/about/?viewAsMember=true"
+                target="_blank"><img src="{% static 'assets19/images/linkedin.png' %}" class="social"></a>
+            </div>
+          </center>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- script -->
+  <script src="{% static 'assets19/js/jquery.min.js' %}">
+  </script>
+  <script src="{% static 'assets19/js/bootstrap.min.js' %}">
+  </script>
+  <script src="{% static 'assets19/js/smooth-scroll.min.js' %}">
+  </script>
+  <script src="{% static 'assets19/js/main.js' %}">
+  </script>
+
+</body>
+
+</html>

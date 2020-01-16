@@ -1,0 +1,418 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Home | Ghana Data Science Summit" %}{% endif %}{% endblock %}
+
+
+{% block content %}
+
+
+
+
+<!--BANNER-->
+<section>
+    <div class="lgx-banner lgx-banner5">
+        <div class="lgx-banner-style">
+            <div class="lgx-inner ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-banner-info banner-info-margin"> <!--lgx-banner-info-center lgx-banner-info-black lgx-banner-info-big lgx-banner-info-bg--> <!--banner-info-margin-->
+                                <h1 class=""><font color="white"><b>Ghana Data Science Summit</b></fon color="white"t color="white"></h1>
+                                <h2 class=""><font color="white"><b>IndabaX 2020</b></font></h2>
+                                <h3 class="subtitle"><span id="lgx-typed-string">GDSS</span></h3>
+                                <h3 class="location"><i class="fa fa-map-marker"></i> Bank of Ghana Auditorium, University of Ghana.</h3>
+                                <h3 class="date"><i class="fa fa-calendar"></i> 17-19th June, 2020
+                                </h3>
+                                <div class="action-area">
+                                    <div class="lgx-video-area">
+                                        <a class="lgx-btn lgx-btn-blue" href="http://bit.ly/gh-datascience20">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.ROW-->
+                </div>
+                <!-- //.CONTAINER -->
+            </div>
+            <!-- //.INNER -->
+        </div>
+    </div>
+</section>
+<!--BANNER END-->
+
+
+    <!--countdown-->
+    <section>
+        <div id="lgx-countdowns" class="lgx-countdowns lgx-countdowns-banner-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="lgx-countdown-area lgx-countdown-area-squre lgx-countdowns-banner-bottom">
+                            <!-- Date Format :"Y/m/d" || For Example: 1017/10/5  -->
+                            <div id="lgx-countdown" data-date="2020/06/17"></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- //.CONTAINER -->
+        </div>
+    </section>
+    <!--countdown END-->
+
+    <!--ABOUT-->
+    <section>
+        <div id="lgx-about" class="lgx-about lgx-about2">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-offset-5 col-sm-12 col-md-7">
+                            <div class="lgx-about-content-area">
+                                <div class="lgx-heading">
+                                    <h2 class="heading">IndabaX Ghana</h2>
+                                    <h3 class="subheading">Brief Overview</h3>
+                                </div>
+                                <div class="lgx-about-content">
+                                    <p class="text">
+                                        The 2nd Ghana Data Summit 2020 (dubbed IndabaX Ghana) is organized by the Data Science Network (a non-profit organization) and Wave-2 Analytics Ltd., a Ghanaian-based analytics startup in partnership with Deep Learning Indaba.
+                                        <br><br>
+                                        Ghana is undergoing a “Data Science” transformation with hundreds of activities happening nationwide. Those who are new to data science are asking, “how do I get started?” Businesses and governments are asking “how do I deploy Machine Learning and Artificial Intelligence to create value?” Also, schools are grappling with how to incorporate Data Science into their curriculum. The IndabaX Ghana 2020 aims to create an inclusive platform where everyone – students, professors, researchers, businesses, start-ups, and leaders – can connect and enhance capacity in data science and analytics (including data mining, machine learning, and artificial intelligence).
+                                    </p>
+                                    <div class="section-btn-area">
+                                        <a class="lgx-btn" href="about.html">More About</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //.CONTAINER -->
+            </div><!-- //.INNER -->
+        </div>
+    </section>
+    <!--ABOUT END-->
+
+
+<!--SPEAKERS-->
+<section>
+    <div id="lgx-speakers" class="lgx-speakers">
+        <div class="lgx-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-heading">
+                            <h2 class="heading">Who’s Speaking</h2><br>
+                            <h3 class="subheading">Speakers would be annouced soon!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //.CONTAINER -->
+        </div>
+        <!-- //.INNER -->
+    </div>
+</section>
+<!--SPEAKERS END-->
+
+
+
+
+
+<!--SCHEDULE-->
+<section>
+    <div id="lgx-schedule" class="lgx-schedule">
+        <div class="lgx-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-heading lgx-heading-white">
+                            <h2 class="heading">Event Schedule</h2>
+                            <h3 class="subheading">Tentative Conference Structure!</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-tab">
+                            <ul class="nav nav-pills lgx-nav">  <!--lgx-nav-nogap lgx-nav-colorful-->
+                                <li class="active"><a data-toggle="pill" href="#home"><h3>First <span>Day</span></h3> <p><span>17 </span>June, 2020</p></a></li>
+                                <li><a data-toggle="pill" href="#menu1"><h3>Second <span>Day</span></h3> <p><span>18 </span>June, 2020</p></a></li>
+                                <li><a data-toggle="pill" href="#menu2"><h3>Third <span>Day</span></h3> <p><span>19 </span>June, 2020</p></a></li>
+                            </ul>
+                            <div class="tab-content lgx-tab-content">
+
+
+                                <div id="home" class="tab-pane fade in active">
+
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default lgx-panel">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <div class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <div class="lgx-single-schedule">
+                                                            <div class="schedule-info">
+                                                                <h4 class="time">Tentative Structure for Day 1</h4>
+                                                                <p class="text">
+                                                                    <ul>
+                                                                        <li>Morning Session : Modern Data Management and Analytics</li>
+                                                                        <li>Afternoon Session: Application Talks of Analytics in Retail, Financial Services, Health, Agriculture and Government</li>
+                                                                        <li>Evening Session: Networking and Poster Presentations from selected  participants</li>
+                                                                      </ul>
+                                                                   </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div id="menu1" class="tab-pane fade">
+
+                                    <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default lgx-panel">
+                                            <div class="panel-heading" role="tab" id="headingOne2">
+                                                <div class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <div class="lgx-single-schedule">
+                                                            <div class="schedule-info">
+                                                                <h4 class="time">Tentative Structure for Day 2</h4>
+                                                                <p class="text">
+                                                                    <ul>
+                                                                        <li>Morning Session: Foundations of  Machine Learning and Artificial Intelligence</li>
+                                                                        <li>Afternoon Session: Application Talks of ML and AI in Retail, Financial Services, Health, Agriculture and other domains</li>
+                                                                    </ul>
+                                                                   </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div id="menu2" class="tab-pane fade">
+
+                                    <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default lgx-panel">
+                                            <div class="panel-heading" role="tab" id="headingOne3">
+                                                <div class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <div class="lgx-single-schedule">
+                                                            <div class="schedule-info">
+                                                                <h4 class="time">Tentative Structure for Day 3</h4>
+                                                                <p class="text">
+                                                                    <ul>
+                                                                        <li>Executive Session: Exhibition of Data Science Providers, and executive talks  and discussions covering several topics on how businesses can take full advantage of Data Science and the value it provides</li>
+                                                                        <li>Hands-on tutorials (Parallel to the executive session)</li>
+                                                                    </ul>
+                                                                   </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//.ROW-->
+            </div>
+            <!-- //.CONTAINER -->
+        </div>
+        <!-- //.INNER -->
+    </div>
+</section>
+<!--SCHEDULE END-->
+
+
+
+<!--SPONSORED-->
+<section>
+    <div id="lgx-sponsors" class="lgx-sponsors">
+        <div class="lgx-inner-bg">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading">
+                                <h2 class="heading">Offcial Sponsors</h2>
+                                <h3 class="subheading">Would be announced soon!</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-btn-area">
+                        <a class="lgx-btn" href="#">Become A Sponsor</a>
+                    </div>
+                    <br>
+                    <div class="lgx-about-content">
+                        <h3 class="subheading">Why should you support IndabaX Ghana?</h3>
+                        <p class="text">
+                            <b>Connect:</b> You will meet the key players in Data Science in Ghana to create new networks.
+                        </p>
+                        <p class="text">
+                            <b>Inspire:</b> Your support will help inspire people from all walks of life who want to work in Data Science.
+                        </p>
+                        <p class="text">
+                            <b>Lead:</b> Continue leading efforts to promote Data Science through eliminating barriers to education.
+                        </p>
+                        <p class="text">
+                            <b>Learn:</b> Meet leading experts in Data Science and engage with them to create value for your business.
+                        </p>
+                    </div>
+
+                    <div class="lgx-about-content">
+                        <h3 class="subheading">Previous IndabaX Ghana Conferences</h3>
+                        <p class="text">
+                            We have done this before! Our 1stGhana Data Science Summit 2019 was a huge success, bringing together about 200 people (for free!) for three days to learn, connect and network, with 76% of attendees reporting that the conference met and exceeded their expectations.
+                        </p>
+                        <p class="text">
+                            Please see our <a href="http://bit.ly/indabaxghana2019" target="/"><b>official report</b></a>. Also, take a moment to review our <a href="http://bit.ly/indabaxgh19_slides" target="/"><b>workshop slides</b></a>, workshop <a href="http://bit.ly/indabaxgh19_videos" target="/"><b>lecture videos</b></a>, and <a href="http://bit.ly/indabaxgh19_photos" target="/"><b>conference photos</b></a>.
+                            <a href=""></a>
+                        </p>
+                        
+                    </div>
+
+                </div>
+                <!--//container-->
+            </div>
+        </div>
+        <!--//lgx-inner-->
+    </div>
+</section>
+<!--SPONSORED END-->
+
+
+
+
+
+
+    <!--PHOTO GALLERY-->
+    <section>
+        <div id="lgx-photo-gallery" class="lgx-gallery-popup lgx-photo-gallery-normal lgx-photo-gallery-black">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading lgx-heading-white">
+                                <h2 class="heading">Photo Gallery</h2>
+                                <h3 class="subheading">Some memories from our previous summit!</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-gallery-area">
+                                <div  class="lgx-gallery-single">
+                                    <figure>
+                                        <img title="Memories One" src="{% static 'assets/img/gallery/GDSS1.png' %}" alt="Memories one"/>
+                                        <figcaption class="lgx-figcaption">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
+                                                    <a title="Memories One" href="{% static 'assets/img/gallery/GDSS1.png' %}">
+                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!--Single photo-->
+                                <div  class="lgx-gallery-single">
+                                    <figure>
+                                        <img src="{% static 'assets/img/gallery/GDSS2.png' %}" alt="Memories Two" title="Memories Two" />
+                                        <figcaption class="lgx-figcaption">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
+                                                    <a title="Memories Two" href="{% static 'assets/img/gallery/GDSS2.png' %}">
+                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>  <!--Single photo-->
+                                <div  class="lgx-gallery-single">
+                                    <figure>
+                                        <img src="{% static 'assets/img/gallery/GDSS3.png' %}" alt="Memories Three" title="Memories Three" />
+                                        <figcaption class="lgx-figcaption">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
+                                                    <a title="Memories Three" href="{% static 'assets/img/gallery/GDSS3.png' %}">
+                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!--Single photo-->
+                                <div  class="lgx-gallery-single">
+                                    <figure>
+                                        <img src="{% static 'assets/img/gallery/GDSS4.png' %}" alt="Memories Four" title="Memories Four" />
+                                        <figcaption class="lgx-figcaption">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
+                                                    <a title="Memories Four" href="{% static 'assets/img/gallery/GDSS4.png' %}">
+                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!--Single photo-->
+                                <div class="lgx-gallery-single">
+                                    <figure>
+                                        <img src="{% static 'assets/img/gallery/GDSS5.png' %}" alt="Memories Five" title="Memories Five" />
+                                        <figcaption class="lgx-figcaption">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
+                                                    <a title="Memories Five" href="{% static 'assets/img/gallery/GDSS5.png' %}">
+                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!--Single photo-->
+                                <div class="lgx-gallery-single">
+                                    <figure>
+                                        <img src="{% static 'assets/img/gallery/GDSS6.png' %}" alt="Memories Six" title="Memories Six" />
+                                        <figcaption class="lgx-figcaption">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
+                                                    <a title="Memories Six" href="{% static 'assets/img/gallery/GDSS6.png' %}">
+                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!--Single photo-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="lgx-heading lgx-heading-white">
+                    <a class="lgx-btn" href="https://photos.app.goo.gl/jQknzgGj7GCxmyVS6" target="/"><span>View more...</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PHOTO GALLERY END-->
+
+    
+    {% include 'footerO.html' %}
+
+{% endblock %}

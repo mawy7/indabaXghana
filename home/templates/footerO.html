@@ -1,0 +1,75 @@
+{% load staticfiles %}
+{% load static %}
+
+
+{% block footer %}
+
+
+<!--FOOTER-->
+<footer>
+  <div id="lgx-footer" class="lgx-footer"> <!--lgx-footer-white-->
+      <div class="lgx-inner-footer">
+          <div class="container">
+              <div class="lgx-footer-area">
+                  <div class="lgx-footer-single">
+                      <a class="logo" href="/"><img src="{% static 'assets/img/footer-logo2.png' %}" alt="Logo"></a>
+                  </div> <!--//footer-area-->
+                  <div class="lgx-footer-single">
+                      <h3 class="footer-title">Venue Location </h3>
+                      <h4 class="date">
+                          17 - 19 June, 2020
+                      </h4>
+                      <address>
+                          Bank of Ghana Auditorium, University of Ghana<br>
+                          Accra, Ghana
+                      </address>
+                      <a id="myModalLabel2" data-toggle="modal" data-target="#lgx-modal-map" class="map-link" href="https://goo.gl/maps/DToAVTQvJ2JJ8UB76"><i class="fa fa-map-marker" aria-hidden="true"></i> View Map location</a>
+                  </div>
+                  <div class="lgx-footer-single">
+                      <h3 class="footer-title">Social Connection</h3>
+                      <p class="text">
+                          You should connect social area <br> for Any update
+                      </p>
+                      <ul class="list-inline lgx-social-footer">
+                          <li><a href="https://www.facebook.com/Ghana-Analytics-Summit-220778151832185/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                          <li><a href="https://twitter.com/ghdatascience"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                          <li><a href="https://www.instagram.com/ghanadatascience/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                          <li><a href="https://www.linkedin.com/company/ghana-data-science-summit/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                      </ul>
+                  </div>
+                  <!--<div class="lgx-footer-single">
+                      <h2 class="footer-title">Instagram Feed</h2>
+                      <div id="instafeed">
+                      </div>
+                  </div>-->
+              </div>
+              <!-- Modal-->
+              <div id="lgx-modal-map" class="modal fade lgx-modal">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          </div>
+                          <div class="modal-body">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.4224203597933!2d-0.18931440039778802!3d5.651869600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9c7ddc57a337%3A0x9776463e0a3cbd1!2sBank%20Of%20Ghana%20Auditorium!5e0!3m2!1sen!2sgh!4v1578945745358!5m2!1sen!2sgh" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                          </div>
+                      </div>
+                  </div>
+              </div> <!-- //.Modal-->
+
+              <div class="lgx-footer-bottom">
+                  <div class="lgx-copyright">
+                      <p> <span>©</span> 2020 Ghana Data Science Summit</p>
+                  </div>
+              </div>
+
+          </div>
+          <!-- //.CONTAINER -->
+      </div>
+      <!-- //.footer Middle -->
+  </div>
+</footer>
+<!--FOOTER END-->
+
+
+{% endblock %}

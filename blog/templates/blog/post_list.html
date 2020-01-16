@@ -1,0 +1,105 @@
+{% extends 'blog/base.html' %}
+{%load static%}
+{% load hitcount_tags %}
+
+{% block content %}
+
+ <!-- Start Header Section-->
+ <header id="small-main-header" class="other-main-header-2 gradient-color">
+    
+        <div class="title">
+          <h2 class="">Our Blog</h2>
+        </div>
+        
+        <p class="breadcrumbs"><a href="/">Home</a> <span>&gt;</span> <a href="/News" class="active">Our
+                Blog</a></p>
+      
+      </header>
+      <!-- End Header Section-->
+      
+      <!-- Start News Section-->
+      <section id="news" class="main-section news-style-2 blog-page-news center-align">
+        
+        <div class="overlay"></div>
+        
+        <div class="container">
+          
+<div class="row">
+        
+        <div class="col s12">
+          
+          <div class="p-t-2 grid center-align row">
+            {% for post in posts %}
+            
+            <div class="single-news col s12 m6 l4">
+              
+              <div class="news-container z-depth-2">
+                
+                <!-- Link to the blog news post -->
+                <a href="{% url 'post_detail' post.slug %}" class="post-link">
+                  
+                  <figure class="figure">
+                    
+                    <!--Blog News Image-->
+                    <img class="image" src="{{ post.image.url }}" alt="News Image"/>
+                    
+                    <!--Overlay Background Color-->
+                    <div class="overlay gradient-color"></div>
+                    
+                    <figcaption class="caption">
+                      
+                      <div class="stats">
+                        <i class="fa fa-eye"></i> {% get_hit_count for post %}
+                        <br>
+                      </div>
+                    
+                    </figcaption>
+                  
+                  </figure>
+                
+                </a>
+                
+                <div class="info p-b-1">
+                  
+                  <div class="data">
+                    
+                    <!-- Post Writer Name -->
+                    <span><i class="gradient-color fa fa-user" aria-hidden="true"></i> {{ post.author }}</span>
+                    <!-- Post Date -->
+                    <span class="date"><i class="gradient-color fa fa-calendar p-tb-1" aria-hidden="true"></i>{{ post.published_date }}</span>
+                  
+                  </div>
+                  
+                  <!-- Post Title -->
+                  <a href="{% url 'post_detail' post.slug %}" class="p-t-1">
+                    <h6>{{ post.title }}</h6>
+                  </a>
+                  
+                  <!-- Post Excerpt -->
+                  <p class="p-t-1">{{ post.text|linebreaksbr | truncatewords:20 }}</p>
+                  
+                  <a href="{% url 'post_detail' post.slug %}" class="m-t-1 gradient-color button-main">
+                    <span>Read More</span>
+                    <i class="fa fa-angle-double-right"></i>
+                  </a>
+                
+                </div>
+              
+              </div>
+            
+            </div>
+            {% endfor %}
+
+          </div>
+          
+        </div>
+        
+      
+</div>
+        </div>
+      
+      </section>
+      <!-- End News Section-->
+
+
+{% endblock %}

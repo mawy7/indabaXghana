@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>IndabaX Ghana</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="{% static 'assets19/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.8/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'assets19/css/main.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <style>
+    html,
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#site-nav">
+  <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+        </button>
+
+      </div>
+      <!-- /.navbar-header -->
+
+      <div class="collapse navbar-collapse" id="navbar-items">
+        <ul class="nav navbar-nav">
+
+          <!-- navigation menu -->
+          <li class="active">
+            <a data-scroll href="index19.html">Home</a>
+          </li>
+          <li>
+            <a data-scroll href="#about">About</a>
+          </li>
+          <li>
+            <a href="./speakers19.html">Speakers</a>
+          </li>
+          <li>
+            <a data-scroll href="#ts-schedule">Schedule</a>
+          </li>
+          <li>
+            <a data-scroll href="#sponsors">Sponsors</a>
+          </li>
+          <li>
+            <a data-scroll href="#location">Location</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- /.container -->
+  </nav>
+
+
+  
+<!-- Body -->
+{% block content %}
+
+{% endblock %}
+<!-- /Body -->
+
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9" style="text-align:left;">
+          <div class="row">
+            <h4 class="">Want to Contact Us?</h4>
+            <div class="col-md-6">
+              <p>
+                Please send us an email at: <br>
+                <a href="mailto:info@indabaxghana.com" style="color: white">
+                  info@indabaxghana.com
+                </a>
+              </p>
+
+            </div>
+            <div class="col-md-6">
+              Contact numbers:
+              <p>
+                <a href="tel:+233 504037331" style="color: white"> +233 504037331 </a> <br>
+                <a href="tel:+233 504037331" style="color: white"> +233 572226620 </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <center>
+            <p style="font-size: 17px;">Let's Get Social:</p>
+
+            <div style="margin-top: 20px;">
+              <a href="https://www.facebook.com/Ghana-Analytics-Summit-220778151832185/" target="_blank"><img
+                  src="{% static 'assets19/images/fb.png' %}" class="social"></a>
+              <a href="https://www.instagram.com/ghanadatascience/" target="_blank"><img src="{% static 'assets19/images/insta.png' %}"
+                  class="social"></a>
+              <a href="https://twitter.com/ghdatascience" target="_blank"><img src="{% static 'assets19/images/twitter.png' %}"
+                  class="social"></a>
+              <a href="https://www.linkedin.com/company/ghana-data-science-summit/about/?viewAsMember=true"
+                target="_blank"><img src="{% static 'assets19/images/linkedin.png' %}" class="social"></a>
+            </div>
+          </center>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- script -->
+  <script src="{% static 'assets19/js/jquery.min.js' %}">
+  </script>
+  <script src="{% static 'assets19/js/bootstrap.min.js' %}">
+  </script>
+  <script src="{% static 'assets19/js/smooth-scroll.min.js' %}">
+  </script>
+  <script src="{% static 'assets19/js/main.js' %}">
+  </script>
+
+</body>
+
+</html>

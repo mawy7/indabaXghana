@@ -1,0 +1,108 @@
+{% extends 'blog/base.html' %}
+{%load static%}
+{% load hitcount_tags %}
+
+
+{% block content %}
+
+ <!-- Start Header Section-->
+ <header id="small-main-header" class="other-main-header-2 gradient-color">
+    
+        <div class="title">
+          <h2 class=""> {{ post.title }}</h2>
+        </div>
+        <p class="breadcrumbs"><a href="/">Home</a> <span>&gt;</span> <a href="/News" class="active">Our
+                Blog</a></p>
+       
+       
+      
+      </header>
+      <!-- End Header Section-->
+      
+      <!-- Start News Section-->
+      <section id="news" class="main-section news-style-2 blog-page-news center-align">
+        
+        <div class="overlay"></div>
+        
+        <div class="container">
+                <div class="single-news">
+              
+                        <div class="news-container z-depth-2">
+                           
+                    <section id="news" data-scroll-index="4" class="main-section news-style-2 blog-page-news center-align">
+                    
+                        <div class="">
+                               <figure>
+                                
+                                <!-- Post Image -->
+                                <img class="responsive-img" src="{{ post.image.url }}" alt="news image">
+                              
+                              </figure>
+                          <div class="p-t-2 grid center-align row">
+                            
+                            <div class="single-news col s12">
+                                 
+                              <div class="info p-b-1">
+                                
+                                <div class="data center-align">
+                                  
+                                  <!-- Post Writer Name -->
+                                  <span>
+                                                    <i class="gradient-color fa fa-user" aria-hidden="true"></i> {{ post.author }}
+                                                </span>
+                                 
+                                  <!--Post Views Count-->
+                                  <span>
+                                                    <i class="fa fa-eye gradient-color" aria-hidden="true"></i>{% get_hit_count for post %}
+                                                </span>
+                                  
+                                     <!-- Post Date -->
+                                {% if post.published_date %}
+                                <span class="date">
+                                                  <i class="gradient-color fa fa-calendar p-tb-1" aria-hidden="true"></i>  {{ post.published_date }}
+                                              </span>
+                              {% endif %}
+                                
+                                               
+                                </div>
+                                
+                                <!-- Post Content -->
+                                <div class="content">
+                                <p class="p-t-1">{{ post.text|linebreaksbr }}</p>
+                                  
+                                </div>
+                              
+                              </div>
+                              
+                              <hr>
+                              {% if user.is_authenticated %} 
+                                <a class="btn-floating btn-large cyan pulse" href="{% url 'post_edit' post.slug %}"><i class="fa fa-pencil"></i></a>
+                                {% endif %}
+                        
+                        </div>
+                        
+                      </div>
+                    
+                    </div>
+                  
+                  </section>
+                        
+                        </div>
+                      
+                </div>
+        </div>
+      
+      </section>
+      <!-- End News Section-->
+
+
+
+
+    
+    
+
+
+
+
+      
+{% endblock %}
