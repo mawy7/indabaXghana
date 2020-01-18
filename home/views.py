@@ -9,5 +9,15 @@ def home(request):
     template = 'home.html'
     return render(request, template, context)
 
+def home19(request):
+    context = {}
+    template = 'home19.html'
+    return render(request, template, context)
+
+def speakers19(request):
+    context = {}
+    template = 'speakers19.html'
+    return render(request, template, context)
+
 def handler404(request, exception):
     return render(request, '404.html', locals())
