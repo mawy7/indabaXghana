@@ -356,7 +356,7 @@
          ========================================================================== */
         if($('#lgx-typed-string').length){
             $('#lgx-typed-string').typed({
-                strings: ["Are you into:", "Data Science", "Machine Learning", "Artificial Intelligence","Data Mining","Then, attend this summit themed:","Leveraging Data Science for Economic Development","","","","","",""],
+                strings: ["Are you into:", "Data Science", "Machine Learning", "Artificial Intelligence","Data Mining","Then, attend this summit themed:","Leveraging Data Science for Competitive Advantage","","","","","",""],
                 // typing speed
                 typeSpeed: 30,
                 // time before typing starts

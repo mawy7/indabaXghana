@@ -1,11 +1,34 @@
 {% extends "base.html" %}
 {% load i18n static %}
-{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Home | Ghana Data Science Summit" %}{% endif %}{% endblock %}
+{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Page 404 | Ghana Data Science Summit" %}{% endif %}{% endblock %}
 
 
 {% block content %}
 
 
+
+    <!--Banner Inner-->
+    <section>
+        <div class="lgx-banner lgx-banner-inner">
+            <div class="lgx-page-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading-area">
+                                <div class="lgx-heading lgx-heading-white">
+                                    <h2 class="heading">Page 404</h2>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                                    <li class="active">Page 404</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--//.ROW-->
+                </div><!-- //.CONTAINER -->
+            </div><!-- //.INNER -->
+        </div>
+    </section> <!--//.Banner Inner-->
 
 
     <!--ABOUT-->
@@ -17,7 +40,7 @@
                         <div class="col-md-offset-5 col-sm-12 col-md-7">
                             <div class="lgx-about-content-area">
                                 <div class="lgx-about-content">
-                                    <h2>404</h2>
+                                    <h2>Page 404</h2>
                                     <p>Sorry the page you are looking for can't be found</p>
                                     <div class="section-btn-area">
                                         <a class="lgx-btn" href="/">Go back Home</a>
@@ -35,7 +58,7 @@
 
 
 
-    
+
     {% include 'footerO.html' %}
 
 {% endblock %}
