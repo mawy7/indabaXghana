@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Resources | Ghana Data Science Summit" %}{% endif %}{% endblock %}
+
+
+{% block content %}
+
+
+    <!--Banner Inner-->
+    <section>
+        <div class="lgx-banner lgx-banner-inner">
+            <div class="lgx-page-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading-area">
+                                <div class="lgx-heading lgx-heading-white">
+                                    <h2 class="heading">Resources</h2>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                                    <li class="active">Resources</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--//.ROW-->
+                </div><!-- //.CONTAINER -->
+            </div><!-- //.INNER -->
+        </div>
+    </section> <!--//.Banner Inner-->
+
+
+    <main>
+        <div class="lgx-page-wrapper lgx-page-wrapper-none">
+ 
+
+
+            <div class="section-btn-area">
+
+                <a class="lgx-btn lgx-btn-red lgx-scroll" href="/resources">Slides</a>
+                <a class="lgx-btn" href="/resources/photos">Photos</a>
+                <a class="lgx-btn lgx-btn-red lgx-scroll" href="/resources/videos">Videos</a>
+            </div><br>
+            
+       
+    <!--PHOTO GALLERY-->
+    <section>
+        <div id="lgx-photo-gallery" class="lgx-gallery-popup lgx-photo-gallery-normal lgx-photo-gallery-black">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading lgx-heading-white">
+                                <h2 class="heading">Photo Gallery</h2>
+                                <h3 class="subheading">Some memories from our previous summit!</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-gallery-area">
+                                {% for photo in photos %}
+                                    
+                                       
+                                <div  class="lgx-gallery-single">
+                                    <figure>
+                                        <img title="{{ photo.indabax_edition }}" src="{{ photo.photo.url }}" alt="Memories one"/>
+                                        <figcaption class="lgx-figcaption">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
+                                                    <a title="{{ photo.indabax_edition }}" href="{{ photo.photo.url }}">
+                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!--Single photo-->
+                                {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="lgx-heading lgx-heading-white">
+                    <a class="lgx-btn" href="https://photos.app.goo.gl/jQknzgGj7GCxmyVS6" target="/"><span>View more...</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PHOTO GALLERY END-->
+
+        </div>
+    </main>
+
+    
+
+
+    {% include 'footerO.html' %}
+
+{% endblock %}

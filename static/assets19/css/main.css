@@ -500,7 +500,7 @@
     background-size: 5em;
     background-repeat: no-repeat;
     transform: translateY(+33%);
-    background-image: url('../images/institutions/UCT.jpg');
+    background-image: url("{% static 'assets19/images/institutions/UCT.jpg' %}");
  }
  ul li.US:before {
    content: '';
@@ -510,7 +510,7 @@
    background-size: 5em;
    background-repeat: no-repeat;
    transform: translateY(+33%);
-   background-image: url('../images/institutions/US.jpg');
+   background-image: url("{% static 'assets19/images/institutions/US.jpg' %}");
  }
  ul li.AIMS:before {
    content: '';
@@ -520,7 +520,7 @@
    background-size: 5em;
    background-repeat: no-repeat;
    transform: translateY(+33%);
-   background-image: url('../images/institutions/AIMS.jpg');
+   background-image: url("{% static 'assets19/images/institutions/AIMS.jpg' %}");
  }
  ul li.UWC:before {
    content: '';
@@ -530,7 +530,7 @@
    background-size: 5em;
    background-repeat: no-repeat;
    transform: translateY(+33%);
-   background-image: url('../images/institutions/UWC.jpg');
+   background-image: url("{% static 'assets19/images/institutions/UWC.jpg' %}");
  }
  
  /*

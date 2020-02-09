@@ -96,72 +96,35 @@
                             </div>
                             <!--//.ROW-->
                             <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="lgx-single-speaker">
-                                        <figure>
-                                            <a class="profile-img" href=""><img src="{% static 'assets/img/team/delali.jpeg' %}" alt="Speaker"/></a>
-                                            <figcaption>
-                                                <div class="social-group">
-                                                    <a class="sp-tw" href="https://twitter.com/DelaliAgbey"><i class="fa fa-twitter"></i></a>
-                                                    <a class="sp-in" href="https://www.linkedin.com/in/delaliagbenyegah/"><i class="fa fa-linkedin"></i></a>
-                                                </div>
-                                                <div class="speaker-info">
-                                                    <h3 class="title"><a href="">Delali Agbenyegah</a></h3>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="lgx-single-speaker">
-                                        <figure>
-                                            <a class="profile-img" href=""><img src="{% static 'assets/img/team/austin.jpeg' %}" alt="Speaker"/></a>
-                                            <figcaption>
-                                                <div class="social-group">
-                                                    <a class="sp-tw" href="https://twitter.com/austin_denteh"><i class="fa fa-twitter"></i></a>
-                                                    <a class="sp-in" href="https://www.linkedin.com/in/augustinedenteh/"><i class="fa fa-linkedin"></i></a>
-                                                </div>
-                                                <div class="speaker-info">
-                                                    <h3 class="title"><a href="">Augustine Denteh, PhD</a></h3>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
 
+                                {% for team in abouts %}
+                                
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="lgx-single-speaker">
                                         <figure>
-                                            <a class="profile-img" href=""><img src="{% static 'assets/img/team/aseda.jpg' %}" alt="Speaker"/></a>
+                                            <a class="profile-img"><img src="{{ team.display_image.url }}" alt="Speaker"/></a>
                                             <figcaption>
                                                 <div class="social-group">
-                                                    <a class="sp-tw" href="https://twitter.com/AsedaAD"><i class="fa fa-twitter"></i></a>
-                                                    <a class="sp-in" href="https://linkedin.com/in/aseda-addai-deseh/"><i class="fa fa-linkedin"></i></a>
-                                                </div>
-                                                <div class="speaker-info">
-                                                    <h3 class="title"><a href="">Aseda Addai-Deseh</a></h3>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
+                                                    {% if team.member_twitter %}
+                                                    <a class="sp-tw" href="https://twitter.com/{{ team.member_twitter }}"><i class="fa fa-twitter"></i></a>
+                                                    {% else %}
+                                                    <p></p>
+                                                    {% endif %}
 
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="lgx-single-speaker">
-                                        <figure>
-                                            <a class="profile-img" href=""><img src="{% static 'assets/img/team/elvis.jpg' %}" alt="Speaker"/></a>
-                                            <figcaption>
-                                                <div class="social-group">
-                                                    <a class="sp-tw" href="#"><i class="fa fa-twitter"></i></a>
-                                                    <a class="sp-in" href="https://www.linkedin.com/in/elvis-agbenyega/"><i class="fa fa-linkedin"></i></a>
+                                                   {% if team.member_linkedin %}
+                                                   <a class="sp-in" href="https://www.linkedin.com/{{ team.member_linkedin }}"><i class="fa fa-linkedin"></i></a>
+                                                    {% else %}
+                                                    <p></p>
+                                                    {% endif %}
                                                 </div>
                                                 <div class="speaker-info">
-                                                    <h3 class="title"><a href="">Elvis Agbeshi Agbenyega</a></h3>
+                                                    <h3 class="title"><a href="">{{ team.member_name }}</a></h3>
                                                 </div>
                                             </figcaption>
                                         </figure>
                                     </div>
                                 </div>
+                                {% endfor %}
 
                             
 

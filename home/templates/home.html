@@ -18,9 +18,9 @@
                         <div class="col-xs-12">
                             <div class="lgx-banner-info banner-info-margin"> <!--lgx-banner-info-center lgx-banner-info-black lgx-banner-info-big lgx-banner-info-bg--> <!--banner-info-margin-->
                                 <h1 class=""><font color="white"><b>Ghana Data Science Summit 2020 <br>(IndabaX Ghana)</br></fon color="white"t color="white"></h1>
-                                
+
                                 <h4 class="subtitle"><span id="lgx-typed-string">GDSS</span></h4>
-                                <h3 class="location"><i class="fa fa-map-marker"></i> Bank of Ghana Auditorium, University of Ghana.</h3>
+                                <h3 class="location"><i class="fa fa-map-marker"></i>Cedi Conference Center (a.k.a Bank of Ghana Auditorium) University of Ghana.</h3>
                                 <h3 class="date"><i class="fa fa-calendar"></i> 17-19th June, 2020
                                 </h3>
                                 <div class="action-area">
@@ -99,7 +99,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="lgx-heading">
-                            <h2 class="heading">Who’s Speaking</h2><br>
+                            <h2 class="heading">Who’s Speaking?</h2><br>
                             <h3 class="subheading">Speakers would be annouced soon!</h3>
                         </div>
                     </div>
@@ -247,18 +247,12 @@
                             <div class="lgx-heading">
                                 <h2 class="heading">Official Sponsors</h2>
                                 <div class="sponsors-area">
+                                    {% for sponsor in sponsors %}
                                     <div class="single">
-                                        <a class="" href="https://www.deeplearningindaba.com" target="/"><img src="{% static 'assets/img/sponsors/deep_learning_indaba.jpeg' %}" alt="sponsor"/></a>
-                                    </div>
-                                    <div class="single">
-                                        <a class="" href="#" target="/"><img src="{% static 'assets/img/sponsors/superfluid_labs.jpeg' %}" alt="sponsor"/></a>
-                                    </div>
-                                    <div class="single">
-                                        <a class="" href="#" target="/"><img src="{% static 'assets/img/sponsors/Google.jpeg' %}" alt="sponsor"/></a>
-                                    </div>
-                                    <div class="single">
-                                        <a class="" href="https://www.wave2analytics.com" target="/"><img src="{% static 'assets/img/sponsors/Wave-2 Analytics.jpeg' %}" alt="sponsor"/></a>
-                                    </div>
+                                        <a class="" title="{{ sponsor.organization }}" href="{{ sponsor.website_url }}" target="/"><img src="{{ sponsor.sponsor_image.url }}" alt="{{ sponsor.organization }}"/></a>
+                                    </div> 
+                                    {% endfor %}
+
                                 </div>
                             </div>
                         </div>
@@ -289,10 +283,10 @@
                             We have done this before! Our 1stGhana Data Science Summit 2019 was a huge success, bringing together about 200 people (for free!) for three days to learn, connect and network, with 76% of attendees reporting that the conference met and exceeded their expectations.
                         </p>
                         <p class="text">
-                            Please see our <a href="http://bit.ly/indabaxghana2019" target="/"><b>official report</b></a>. Also, take a moment to review our <a href="http://bit.ly/indabaxgh19_slides" target="/"><b>workshop slides</b></a>, workshop <a href="http://bit.ly/indabaxgh19_videos" target="/"><b>lecture videos</b></a>, and <a href="http://bit.ly/indabaxgh19_photos" target="/"><b>conference photos</b></a>.
+                            Also, take a moment to review our <a href="http://bit.ly/indabaxgh19_slides" target="/"><b>workshop slides</b></a>, workshop <a href="http://bit.ly/indabaxgh19_videos" target="/"><b>lecture videos</b></a>, and <a href="http://bit.ly/indabaxgh19_photos" target="/"><b>conference photos</b></a>.
                             <a href=""></a>
-                        </p>
-                        
+                            </p>
+
                     </div>
 
                 </div>
@@ -308,124 +302,6 @@
 
 
 
-
-    <!--PHOTO GALLERY-->
-    <section>
-        <div id="lgx-photo-gallery" class="lgx-gallery-popup lgx-photo-gallery-normal lgx-photo-gallery-black">
-            <div class="lgx-inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="lgx-heading lgx-heading-white">
-                                <h2 class="heading">Photo Gallery</h2>
-                                <h3 class="subheading">Some memories from our previous summit!</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="lgx-gallery-area">
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img title="Memories One" src="{% static 'assets/img/gallery/GDSS1.png' %}" alt="Memories one"/>
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="Memories One" href="{% static 'assets/img/gallery/GDSS1.png' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img src="{% static 'assets/img/gallery/GDSS2.png' %}" alt="Memories Two" title="Memories Two" />
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="Memories Two" href="{% static 'assets/img/gallery/GDSS2.png' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div>  <!--Single photo-->
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img src="{% static 'assets/img/gallery/GDSS3.png' %}" alt="Memories Three" title="Memories Three" />
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="Memories Three" href="{% static 'assets/img/gallery/GDSS3.png' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img src="{% static 'assets/img/gallery/GDSS4.png' %}" alt="Memories Four" title="Memories Four" />
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="Memories Four" href="{% static 'assets/img/gallery/GDSS4.png' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-                                <div class="lgx-gallery-single">
-                                    <figure>
-                                        <img src="{% static 'assets/img/gallery/GDSS5.png' %}" alt="Memories Five" title="Memories Five" />
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="Memories Five" href="{% static 'assets/img/gallery/GDSS5.png' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-                                <div class="lgx-gallery-single">
-                                    <figure>
-                                        <img src="{% static 'assets/img/gallery/GDSS6.png' %}" alt="Memories Six" title="Memories Six" />
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="Memories Six" href="{% static 'assets/img/gallery/GDSS6.png' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="lgx-heading lgx-heading-white">
-                    <a class="lgx-btn" href="https://photos.app.goo.gl/jQknzgGj7GCxmyVS6" target="/"><span>View more...</span></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--PHOTO GALLERY END-->
-
-    
     {% include 'footerO.html' %}
 
 {% endblock %}

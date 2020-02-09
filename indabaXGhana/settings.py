@@ -48,6 +48,9 @@ INSTALLED_APPS = [
     'crispy_forms', 
     'hitcount',
     'django_slugify_processor',
+    'speakers',
+    'schedule',
+    'resources',
 
 ]
 
@@ -66,7 +69,7 @@ ROOT_URLCONF = 'indabaXGhana.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['./templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -10,14 +10,15 @@
   <title>IndabaX Ghana - Speaker List</title>
 
   <!-- css -->
-  <link rel="stylesheet" href="assets19/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'assets19/css/bootstrap.min.css' %}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.8/css/ionicons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets19/css/main.css">
+  <link rel="stylesheet" href="{% static 'assets19/css/main.css' %}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <style>
-    html, body{
+    html,
+    body {
       font-family: "Open Sans", sans-serif;
     }
   </style>
@@ -42,25 +43,25 @@
       <div class="collapse navbar-collapse" id="navbar-items" style="color: white;">
         <ul class="nav navbar-nav">
 
-          <!-- navigation menu -->
-          <li class="active">
-            <a href="index19.html">Home</a>
-          </li>
-          <li>
-            <a href="index19.html#about">About</a>
-          </li>
-          <li>
-            <a href="speakers19.html">Speakers</a>
-          </li>
-          <li>
-            <a href="index19.html#ts-schedule">Schedule</a>
-          </li>
-          <li>
-            <a href="index19.html#sponsors">Sponsors</a>
-          </li>
-          <li>
-            <a href="index19.html#location">Location</a>
-          </li>
+         <!-- navigation menu -->
+         <li class="active">
+          <a data-scroll href="index19.html">Home</a>
+        </li>
+        <li>
+          <a data-scroll href="#about">About</a>
+        </li>
+        <li>
+          <a href="/speaker19">Speakers</a>
+        </li>
+        <li>
+          <a data-scroll href="#ts-schedule">Schedule</a>
+        </li>
+        <li>
+          <a data-scroll href="#sponsors">Sponsors</a>
+        </li>
+        <li>
+          <a data-scroll href="#location">Location</a>
+        </li>
 
         </ul>
       </div>
@@ -162,13 +163,13 @@
   </footer>
 
   <!-- script -->
-  <script src="assets19/js/jquery.min.js">
+  <script src="{% static 'assets19/js/jquery.min.js' %}">
   </script>
-  <script src="assets19/js/bootstrap.min.js">
+  <script src="{% static 'assets19/js/bootstrap.min.js' %}">
   </script>
-  <script src="assets19/js/smooth-scroll.min.js">
+  <script src="{% static 'assets19/js/smooth-scroll.min.js' %}">
   </script>
-  <script src="assets19/js/main.js">
+  <script src="{% static 'assets19/js/main.js' %}">
   </script>
 
 </body>
