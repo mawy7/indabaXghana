@@ -32,17 +32,17 @@
 
     <main>
         <div class="lgx-page-wrapper lgx-page-wrapper-none">
- 
+
 
 
             <div class="section-btn-area">
 
                 <a class="lgx-btn lgx-btn-red lgx-scroll" href="/resources">Slides</a>
-                <a class="lgx-btn" href="/resources/photos">Photos</a>
+                <a class="lgx-btn active" href="/resources/photos">Photos</a>
                 <a class="lgx-btn lgx-btn-red lgx-scroll" href="/resources/videos">Videos</a>
             </div><br>
-            
-       
+
+
     <!--PHOTO GALLERY-->
     <section>
         <div id="lgx-photo-gallery" class="lgx-gallery-popup lgx-photo-gallery-normal lgx-photo-gallery-black">
@@ -60,8 +60,8 @@
                         <div class="col-xs-12">
                             <div class="lgx-gallery-area">
                                 {% for photo in photos %}
-                                    
-                                       
+
+
                                 <div  class="lgx-gallery-single">
                                     <figure>
                                         <img title="{{ photo.indabax_edition }}" src="{{ photo.photo.url }}" alt="Memories one"/>
@@ -89,13 +89,14 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
     <!--PHOTO GALLERY END-->
 
         </div>
     </main>
 
-    
+
 
 
     {% include 'footerO.html' %}

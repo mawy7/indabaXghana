@@ -14,10 +14,9 @@ from django.utils.encoding import python_2_unicode_compatible
  
 class Slide(models.Model):
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    speaker_name = models.CharField(max_length=200,default="")
+    slide_src = models.CharField(max_length=200,default="")
+    slide_url = models.CharField(max_length=200, default='', help_text='Link to Slide', blank=True,)
     slide_title = models.CharField(max_length=200)
-    slide_url = models.URLField(default='', help_text='Link to Slide', blank=True,)
-    document = models.FileField(upload_to='documents/', blank=True,)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
