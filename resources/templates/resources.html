@@ -49,7 +49,7 @@
                             <div class="lgx-single-news">
                                
                                 <iframe src="//{{ slide.slide_src }}" width="595" height="350" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-                                <div style="margin-bottom:5px"> <strong> <a href="//{{ slide.slide_url }}" title="{{ slide.slide_title }}" target="_blank">{{ slide.slide_title }}</a> </div>
+                                <div style="margin-bottom:5px"> <strong> <a href="//{{ slide.slide_url }}" title="{{ slide.slide_title }}" target="_blank"><h5>{{ slide.slide_title|truncatechars:60 }}</h5></a> </div>
                             </div>
                         </div>
                         {% endfor %}
