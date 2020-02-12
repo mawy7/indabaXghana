@@ -42,7 +42,7 @@
                 <a class="lgx-btn lgx-btn-red lgx-scroll" href="/resources/videos">Videos</a>
             </div><br>
 
-      
+
     <!--PHOTO GALLERY-->
     <section>
         <div id="lgx-photo-gallery" class="lgx-gallery-popup lgx-photo-gallery-normal lgx-photo-gallery-black">
@@ -59,11 +59,12 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="lgx-gallery-area">
-                              
                                 {% for photo in photos %}
+
+
                                 <div  class="lgx-gallery-single">
                                     <figure>
-                                        <img src="{{ photo.photo.url }}" alt="{{ photo.indabax_edition }}" title="{{ photo.indabax_edition }}" />
+                                        <img title="{{ photo.indabax_edition }}" src="{{ photo.photo.url }}" alt="Memories one"/>
                                         <figcaption class="lgx-figcaption">
                                             <div class="lgx-hover-link">
                                                 <div class="lgx-vertical">
@@ -76,15 +77,21 @@
                                     </figure>
                                 </div> <!--Single photo-->
                                 {% endfor %}
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="lgx-heading lgx-heading-white">
+                    <a class="lgx-btn" href="https://photos.app.goo.gl/jQknzgGj7GCxmyVS6" target="/"><span>View more...</span></a>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
     <!--PHOTO GALLERY END-->
-
 
         </div>
     </main>

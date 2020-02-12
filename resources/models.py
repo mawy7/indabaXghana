@@ -10,6 +10,9 @@ from django_slugify_processor.text import slugify
 from django.contrib.contenttypes.fields import GenericRelation
 from django.utils.encoding import python_2_unicode_compatible
 
+from imagekit.models import ProcessedImageField
+from imagekit.processors import ResizeToFit
+
 @python_2_unicode_compatible
  
 class Slide(models.Model):
@@ -22,12 +25,12 @@ class Slide(models.Model):
     def __str__(self):
         return self.slide_title
 
-
+ 
 class Photo(models.Model):
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    indabax_edition = models.CharField(max_length=200)
-    photo = models.ImageField(upload_to='photos/',default="team.png")
-    photo_description = models.TextField(default=" ")
+    indabax_edition = models.CharField(max_length=200, null=True, blank=True,)
+    photo = ProcessedImageField(upload_to='static/photos/',default="team.png", processors=[ResizeToFit(1000)], format='jpeg', options={'quality': 90})
+    photo_description = models.TextField(default=" ", null=True, blank=True,)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
