@@ -42,7 +42,7 @@
                 <a class="lgx-btn lgx-btn-red lgx-scroll" href="/resources/videos">Videos</a>
             </div><br>
 
-
+      
     <!--PHOTO GALLERY-->
     <section>
         <div id="lgx-photo-gallery" class="lgx-gallery-popup lgx-photo-gallery-normal lgx-photo-gallery-black">
@@ -59,14 +59,15 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="lgx-gallery-area">
-
+                              
+                                {% for photo in photos %}
                                 <div  class="lgx-gallery-single">
                                     <figure>
-                                        <img title="2019" src="{% media 'photos/GDSS4.png' %}" alt="Memories one"/>
+                                        <img src="{{ photo.photo.url }}" alt="{{ photo.indabax_edition }}" title="{{ photo.indabax_edition }}" />
                                         <figcaption class="lgx-figcaption">
                                             <div class="lgx-hover-link">
                                                 <div class="lgx-vertical">
-                                                    <a title="2019" href="{% media 'photos/GDSS4.png' %}">
+                                                    <a title="{{ photo.indabax_edition }}" href="{{ photo.photo.url }}">
                                                         <i class="fa fa-chain-broken" aria-hidden="true"></i>
                                                     </a>
                                                 </div>
@@ -74,204 +75,16 @@
                                         </figcaption>
                                     </figure>
                                 </div> <!--Single photo-->
-
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img title="2019" src="{% media 'photos/DSC_0029.NEF.jpg' %}" alt="Memories one"/>
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="2019" href="{% media 'photos/DSC_0029.NEF.jpg' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img title="2019" src="{% media 'photos/DSC_0400.JPG' %}" alt="Memories one"/>
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="2019" href="{% media 'photos/DSC_0400.JPG' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img title="2019" src="{% media 'photos/DSC_0404.JPG' %}" alt="Memories one"/>
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="2019" href="{% media 'photos/DSC_0404.JPG' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img title="2019" src="{% media 'photos/DSC_0479.JPG' %}" alt="Memories one"/>
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="2019" href="{% media 'photos/DSC_0479.JPG' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img title="2019" src="{% media 'photos/DSC_0585.JPG' %}" alt="Memories one"/>
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="2019" href="{% media 'photos/DSC_0585.JPG' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img title="2019" src="{% media 'photos/DSC_0595.JPG' %}" alt="Memories one"/>
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="2019" href="{% media 'photos/DSC_0595.JPG' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img title="2019" src="{% media 'photos/DSC_0727.JPG' %}" alt="Memories one"/>
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="2019" href="{% media 'photos/DSC_0727.JPG' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img title="2019" src="{% media 'photos/DSC_0875.JPG' %}" alt="Memories one"/>
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="2019" href="{% media 'photos/DSC_0875.JPG' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img title="2019" src="{% media 'photos/DSC_1351.JPG' %}" alt="Memories one"/>
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="2019" href="{% media 'photos/DSC_1351.JPG' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img title="2019" src="{% media 'photos/tut.JPG' %}" alt="Memories one"/>
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="2019" href="{% media 'photos/tut.JPG' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img title="2019" src="{% media 'photos/lunch.JPG' %}" alt="Memories one"/>
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="2019" href="{% media 'photos/lunch.JPG' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-
-                                <div  class="lgx-gallery-single">
-                                    <figure>
-                                        <img title="2019" src="{% media 'photos/DSC_0948.JPG' %}" alt="Memories one"/>
-                                        <figcaption class="lgx-figcaption">
-                                            <div class="lgx-hover-link">
-                                                <div class="lgx-vertical">
-                                                    <a title="2019" href="{% media 'photos/DSC_0948.JPG' %}">
-                                                        <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div> <!--Single photo-->
-
-
-                                
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="lgx-heading lgx-heading-white">
-                    <a class="lgx-btn" href="https://photos.app.goo.gl/jQknzgGj7GCxmyVS6" target="/"><span>View more...</span></a>
-                </div>
-            </div>
-        </div>
-        </div>
     </section>
     <!--PHOTO GALLERY END-->
+
 
         </div>
     </main>
