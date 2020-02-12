@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'speakers',
     'schedule',
     'resources',
+    'imagekit',
 
 ]
 
