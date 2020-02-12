@@ -17,9 +17,16 @@ def home19(request):
     template = 'home19.html'
     return render(request, template, context)
 
+
 def speakers19(request):
     context = {}
     template = 'speakers19.html'
+    return render(request, template, context)
+
+
+def faq(request):
+    context = {}
+    template = 'faq.html'
     return render(request, template, context)
 
 def handler404(request, exception):
