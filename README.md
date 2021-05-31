@@ -1,6 +1,6 @@
 # [IndabaX](https://www.indabaxghana.com/)
 
-    This is the source code for the http://pythonghana.org/ website.
+    This is the source code for the https://www.indabaxghana.com/ website.
 
 # Running the site locally
 
