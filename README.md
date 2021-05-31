@@ -1,4 +1,4 @@
-# [pyGhana](http://pythonghana.org/)
+# [IndabaX](https://www.indabaxghana.com/)
 
     This is the source code for the http://pythonghana.org/ website.
 
